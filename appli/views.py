@@ -5,3 +5,9 @@ from django.shortcuts import render
 
 def index(request):
     return HttpResponse("Hello World!")
+
+def show(request):
+    return HttpResponse("Show method")
+
+def random(request, name):
+    return HttpResponse(f"Hello {name.capitalize()}")

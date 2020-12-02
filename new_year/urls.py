@@ -2,5 +2,6 @@ from . import views
 from django.urls import path
 
 urlpatterns = [
-    path('', views.newyear, name="newyear")
+    path('', views.newyear, name="newyear"),
+    path('extending', views.extending, name="extending")
 ]

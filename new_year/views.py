@@ -11,3 +11,6 @@ def newyear(request):
         "ans" : date.month == 1 and date.day == 1,
         "date" : date
     })
+
+def extending(request):
+    return render(request, "new_year/extending.html")

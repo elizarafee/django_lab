@@ -10,4 +10,6 @@ def show(request):
     return HttpResponse("Show method")
 
 def random(request, name):
-    return HttpResponse(f"Hello {name.capitalize()}")
+    return render(request, "appli/random.html", {
+        "name" : name.capitalize()
+    })

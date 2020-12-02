@@ -4,7 +4,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def index(request):
-    return HttpResponse("Hello World!")
+    return render(request, "appli/index.html")
 
 def show(request):
     return HttpResponse("Show method")

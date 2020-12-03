@@ -2,4 +2,6 @@
 
 {% block body %}
 <h1>This template is made by extending the layout.html file</h1>
+ <!-- the url will search a name='newyear' from the file urls.py -->
+<a href="{% url 'newyear' %}">Is today New Year?</a> 
 {% endblock %}

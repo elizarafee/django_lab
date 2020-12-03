@@ -3,5 +3,6 @@
 {% block body %}
 <h1>This template is made by extending the layout.html file</h1>
  <!-- the url will search a name='newyear' from the file urls.py -->
-<a href="{% url 'newyear' %}">Is today New Year?</a> 
+<a href="{% url 'new_year:newyear' %}">Is today New Year?</a> <br>
+<a href="{% url 'appli:index' %}">Click to visit index of application named Appli</a>
 {% endblock %}

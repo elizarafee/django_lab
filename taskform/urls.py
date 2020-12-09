@@ -4,5 +4,6 @@ from . import views
 app_name = "taskform"
 
 urlpatterns = [
-    path("", views.mainform, name = "mainform")
+    path("", views.tasks, name = "tasks"),
+    path("mainform", views.mainform, name = "mainform")
 ]

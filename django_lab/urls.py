@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('appli/', include("appli.urls")),
     path('new_year/', include("new_year.urls")),
-    path('taskform/', include("taskform.urls"))
+    path('taskform/', include("taskform.urls")),
+    path('tasks/', include("tasks.urls"))
 ]
